@@ -1,0 +1,7 @@
+[versions]
+
+slf4j-api = "2.0.0"
+
+[libraries]
+
+slf4j-api = { group = "org.slf4j", name = "slf4j-api", version.ref = "slf4j-api" }

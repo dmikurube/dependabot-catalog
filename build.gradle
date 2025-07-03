@@ -1,0 +1,25 @@
+plugins {
+    id "java"
+}
+
+repositories {
+    mavenCentral()
+}
+
+group = "io.github.dmikurube"
+version = "0.1.0-SNAPSHOT"
+
+configurations {
+    compileClasspath.resolutionStrategy.activateDependencyLocking()
+    runtimeClasspath.resolutionStrategy.activateDependencyLocking()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+dependencies {
+    implementation libs.slf4j.api
+}
